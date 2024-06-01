@@ -1,0 +1,170 @@
+/* Add styles here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root {
+    --primary-color-hue: 252;
+    --dark-color-lightness: 17%;
+    --light-color-lightness: 95%;
+    --white-color-lightness: 100%;
+    --container-padding: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.hero-section {
+    min-height: 100vh;
+    width: 100%;
+    background-color: hsl(var(--primary-color-hue), 100%, 60%);
+    display: grid;
+    place-items: center;
+}
+
+.hero-section .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section .hero-content .hero-text {
+    width: 49%;
+}
+
+.hero-section .hero-content .hero-text h1 {
+    font-size: 3.5rem;
+    color: hsl(var(--white-color-lightness));
+}
+
+.hero-section .hero-content .hero-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: hsl(var(--white-color-lightness));
+}
+
+.hero-section .hero-content .hero-text button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: hsl(var(--white-color-lightness));
+    background-color: hsl(var(--dark-color-lightness));
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.hero-section .hero-content .hero-text button:hover {
+    background-color: hsl(var(--dark-color-lightness), 70%);
+}
+
+.hero-section .hero-content .hero-text button:active {
+    background-color: hsl(var(--dark-color-lightness), 90%);
+}
+
+.hero-section .hero-content .hero-image {
+    width: 49%;
+}
+
+.hero-section .hero-content .hero-image img {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: hsl(var(--dark-color-lightness));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--container-padding);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar nav a {
+    color: hsl(var(--white-color-lightness));
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+
+.navbar nav a:hover {
+    color: hsl(var(--primary-color-hue), 100%, 65%);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: hsl(var(--white-color-lightness));
+}
+
+.navbar .logo span {
+    color: hsl(var(--primary-color-hue), 100%, 65%);
+}
+
+.navbar nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar nav ul li {
+    list-style: none;
+}
+
+.navbar nav ul li a {
+    color: hsl(var(--white-color-lightness));
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+
+.navbar nav ul li a:hover {
+    color: hsl(var(--primary-color-hue), 100%, 65%);
+}
+
+.navbar nav ul li a.active {
+    color: hsl(var(--primary-color-hue), 100%, 65%);
+}
+
+.navbar .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navbar .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: hsl(var(--white-color-lightness));
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.navbar .hamburger .bar.active {
+    background-color: hsl(var(--primary-color-hue), 100%, 65%);
+}
+
+
+.container {
+    width: 100%;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+}
+
+
